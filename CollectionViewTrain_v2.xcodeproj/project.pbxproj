@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6521E2BD2A1E197000CC067C /* SwiftUISnapDraggingModifier in Frameworks */ = {isa = PBXBuildFile; productRef = 6521E2BC2A1E197000CC067C /* SwiftUISnapDraggingModifier */; };
 		65C1A63A2A1B4B4B001055D5 /* CollectionViewTrain_v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1A6392A1B4B4B001055D5 /* CollectionViewTrain_v2App.swift */; };
 		65C1A63C2A1B4B4B001055D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1A63B2A1B4B4B001055D5 /* ContentView.swift */; };
 		65C1A63E2A1B4B4B001055D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65C1A63D2A1B4B4B001055D5 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 		65C1A64B2A1B4B4C001055D5 /* CollectionViewTrain_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1A64A2A1B4B4C001055D5 /* CollectionViewTrain_v2Tests.swift */; };
 		65C1A6552A1B4B4C001055D5 /* CollectionViewTrain_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1A6542A1B4B4C001055D5 /* CollectionViewTrain_v2UITests.swift */; };
 		65C1A6572A1B4B4C001055D5 /* CollectionViewTrain_v2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1A6562A1B4B4C001055D5 /* CollectionViewTrain_v2UITestsLaunchTests.swift */; };
+		65C1A6642A1B60B9001055D5 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C1A6632A1B60B9001055D5 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		65C1A6502A1B4B4C001055D5 /* CollectionViewTrain_v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewTrain_v2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C1A6542A1B4B4C001055D5 /* CollectionViewTrain_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTrain_v2UITests.swift; sourceTree = "<group>"; };
 		65C1A6562A1B4B4C001055D5 /* CollectionViewTrain_v2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTrain_v2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		65C1A6632A1B60B9001055D5 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6521E2BD2A1E197000CC067C /* SwiftUISnapDraggingModifier in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +100,7 @@
 			children = (
 				65C1A6392A1B4B4B001055D5 /* CollectionViewTrain_v2App.swift */,
 				65C1A63B2A1B4B4B001055D5 /* ContentView.swift */,
+				65C1A6632A1B60B9001055D5 /* DetailView.swift */,
 				65C1A63D2A1B4B4B001055D5 /* Assets.xcassets */,
 				65C1A63F2A1B4B4B001055D5 /* Preview Content */,
 			);
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = CollectionViewTrain_v2;
+			packageProductDependencies = (
+				6521E2BC2A1E197000CC067C /* SwiftUISnapDraggingModifier */,
+			);
 			productName = CollectionViewTrain_v2;
 			productReference = 65C1A6362A1B4B4B001055D5 /* CollectionViewTrain_v2.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 65C1A62D2A1B4B4B001055D5;
+			packageReferences = (
+				6521E2BB2A1E197000CC067C /* XCRemoteSwiftPackageReference "swiftui-snap-dragging-modifier" */,
+			);
 			productRefGroup = 65C1A6372A1B4B4B001055D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C1A63C2A1B4B4B001055D5 /* ContentView.swift in Sources */,
+				65C1A6642A1B60B9001055D5 /* DetailView.swift in Sources */,
 				65C1A63A2A1B4B4B001055D5 /* CollectionViewTrain_v2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +589,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6521E2BB2A1E197000CC067C /* XCRemoteSwiftPackageReference "swiftui-snap-dragging-modifier" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/FluidGroup/swiftui-snap-dragging-modifier";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6521E2BC2A1E197000CC067C /* SwiftUISnapDraggingModifier */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6521E2BB2A1E197000CC067C /* XCRemoteSwiftPackageReference "swiftui-snap-dragging-modifier" */;
+			productName = SwiftUISnapDraggingModifier;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65C1A62E2A1B4B4B001055D5 /* Project object */;
 }

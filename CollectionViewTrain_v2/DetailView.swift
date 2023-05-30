@@ -7,14 +7,21 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct DetailView: View {
+    var card: Card
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text(card.title)
+            //Text(card.id)
+        }
     }
 }
 
-struct DetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailView()
-    }
-}
+//struct DetailView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailView()
+//    }
+//}
